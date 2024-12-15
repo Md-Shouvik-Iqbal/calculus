@@ -1,0 +1,80 @@
+.p-horizontal__on-off,
+.p-vertical__on-off,
+.p-v-small__on-off {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 80rem) {
+  .p-horizontal__on-off {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media only screen and (min-width: 48rem) and (max-width: 79.9375rem) {
+  .p-horizontal__on-off {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media only screen and (min-width: 35.5rem) and (max-width: 47.9375rem) {
+  .p-vertical__on-off {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media only screen and (max-width: 35.4375rem) {
+  .p-v-small__on-off{
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.s__on-off,
+.s-v__on-off,
+.s-small__on-off {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 79.9375rem) {
+  .s__on-off {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media only screen and (min-width: 35.5rem) and (max-width: 79.9375rem) {
+  .s-v__on-off {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media only screen and (max-width: 35.4375rem) {
+  .s-small__on-off {
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

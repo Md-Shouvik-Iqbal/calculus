@@ -1,0 +1,254 @@
+@import url('../base.css');
+@import url('book-text-styles.css');
+
+.page-wrapper{
+  margin: auto;
+}
+
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg__color);
+  z-index: 1000;
+}
+
+.padding-nav{
+  padding: .75rem 5rem;
+}
+.container-nav{
+  max-width: 62.5rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 0rem 1.25rem;
+  justify-content: start;
+  align-items: center;
+  overflow-x: clip;
+}
+
+.logo{
+  grid-area: 1/1/2/6;
+} 
+.book{
+  grid-area: 1/7/2/8;
+} 
+.author{
+  grid-area: 1/8/2/9;
+} 
+
+.padding-global {
+  padding: 2.5rem 5rem;
+}
+
+.container__headings{
+  max-width: 62.5rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem 1.25rem;
+  justify-content: start;
+  align-items: end;
+  overflow-x: clip;
+}
+
+.item__heading{
+  grid-area: 1/1/2/7;
+}
+
+.item__subheadings{
+  grid-area: 2/5/3/9;
+}
+
+.flex__subheading{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: .75rem;
+}
+
+.flex__sub-subheading{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: end;
+  gap: .5rem;
+}
+
+.sub-subheading__line{
+  flex-grow: 1;
+  border-bottom: .0313rem solid var(--text__color--display);
+  height: 0;
+}
+
+.container__reading-text{
+  max-width: 62.5rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 0rem 1.25rem;
+  justify-content: start;
+  align-items: start;
+  padding-bottom: 3rem;
+  overflow-x: clip;
+}
+
+.item__image{
+  grid-area: 1/1/2/6;
+  justify-content: center;
+  position: relative;
+}
+.image__position{
+  position: relative;
+  max-width: 100%; 
+  height: auto;
+  z-index: -9999;
+}
+.item__reading-text{
+  grid-area: 2/1/3/6;
+}
+
+.item__btn--cta {
+  grid-area: 1/6/3/9;
+  position: sticky;
+  align-self: self-start;
+  top: 32vh;
+  padding-bottom: 2.5rem;
+  z-index: 10;
+}
+
+.flex__btn--cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex__v-btn-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.flex__description-cta{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.flex__reading-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.padding-footer {
+  padding: 5.5rem 5rem 4rem 5rem;
+}
+
+.container__footer{
+  max-width: 62.5rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5,min-max(1fr,auto));
+  gap: 1rem 1.25rem;
+  justify-content: start;
+  align-items: start;
+  overflow-x: clip;
+}
+
+.item__footer-display1--Md{
+  grid-area: 1/1/2/9;
+}
+.item__footer-display2--Shouvik{
+  grid-area: 2/1/3/9;
+}
+.item__footer-display3--Iqbal{
+  grid-area: 3/1/4/5;
+}
+
+.item__contact-social-links{
+  grid-area: 3/5/4/9;
+  align-self: end;
+}
+
+.flex__contact-social{
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.contact__label {
+  display: none;
+}
+
+@media only screen and (min-width: 80rem) {
+  .contact__label{
+    display: flex;
+    border-bottom: .0313rem solid var(--text__color--reading);
+    padding-bottom: .75rem;
+  }
+}
+
+.email{
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  padding: 0 0 0 1.25rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: auto;
+}
+
+.email--left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2.75rem;
+  padding: 0 0 0 1.25rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: auto;
+}
+
+.social-icons--left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.item__terms-and-copyrights{
+  
+  grid-area: 5/1/6/9;
+  align-self: start;
+  margin-top: 4rem;
+}
+.flex__terms-and-copyrights{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.flex__terms--text{
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.flex__footer--license{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
