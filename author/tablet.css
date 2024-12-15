@@ -114,21 +114,26 @@
   grid-area: 2/1/3/6;
 }
 
-.item__btn--cta{
-  grid-area:2/6/3/9;
-}
-.flex__btn--cta{
-  display: flex;
-  flex-direction: row;
-  z-index: 2;
+.item__btn--cta {
+  grid-area: 2/6/3/9;
+  position: sticky;
+  align-self: self-start;
+  top: 32vh;
+  padding-bottom: 2.5rem;
+  z-index: 10;
 }
 
-.flex__btn--cta,
-.flex__v-btn-cta,
-.flex__v-btn-cta--small{
+.flex__btn--cta{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex__v-btn-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5rem;
 }
 
 .padding-footer {
